@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="w-full h-24 lg:px-12 px-8 flex items-center justify-between">
+    <div className="w-full lg:h-24 h-20 lg:px-12 px-8 flex items-center justify-between">
         <div  className="flex items-center lg:space-x-5 space-x-2">
             <div className="lg:w-20 lg:h-20 w-10 h-10 border rounded-md border-black relative flex-shrink-0">
                 <Image src="/logo.jpeg" alt="logo" objectFit="contain" fill />
