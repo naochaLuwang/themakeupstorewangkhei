@@ -114,7 +114,7 @@ export default function Trending() {
   return (
     <div className="w-full h-full py-10">
       <h2 className="max-w-7xl px-8 mx-auto lg:text-5xl text-2xl font-medium">
-        WHAT&apos;S MAKING WAVES RIGHT NOW
+        WHAT&apos;S NEW IN VOGUE ?
       </h2>
       <Carousel items={cards} />
     </div>

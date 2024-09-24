@@ -23,10 +23,10 @@ const BrandPartners = () => {
 
 </Marquee>
 <Marquee direction="right">
-    <Partnerimage pimage="/partners/mac.png" />
-    <Partnerimage pimage="/partners/cosrx.png" />
-    <Partnerimage pimage="/partners/pac.png" />
-    <Partnerimage pimage="/partners/mini.png" />
+    <Partnerimage pimage="/partners/lagirl.png" />
+    <Partnerimage pimage="/partners/maybelline.png" />
+    <Partnerimage pimage="/partners/forever52.png" />
+    <Partnerimage pimage="/partners/revolution.png" />
     <Partnerimage pimage="/partners/huda.png" />
     <Partnerimage pimage="/partners/kryolan.png" />
     <Partnerimage pimage="/partners/milani.png" />
