@@ -310,7 +310,7 @@ export const Card = ({
       <motion.div
         layoutId={layout ? `card-${card.title}` : undefined}
 
-        className="rounded-3xl bg-white shadow-lg border border-gray-300 h-40 w-56 md:h-[30rem] md:w-96 flex flex-col items-center justify-start relative z-10 py-10"
+        className="rounded-3xl bg-white shadow-lg border border-gray-300 h-96 w-72 md:h-[30rem] md:w-96 flex flex-col items-center justify-start relative z-10 py-10"
       >
         <div className=" my-4 bg-red-200 py-10 relative w-60 h-60">
           <Image
