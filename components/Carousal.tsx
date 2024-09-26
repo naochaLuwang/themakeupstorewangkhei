@@ -23,7 +23,7 @@ const Carousal = () => {
         src="/mac.png"
         alt="mac banner"
         fill
-        className="object-cover"
+        className="object-cover hidden lg:block"
       />
       <div className="absolute left-0 lg:top-48 top-28 transform -translate-y-1/2 p-4 text-black text-2xl lg:px-12 px-6">
       <h1 className="lg:text-4xl text-base font-semibold tracking-wide leading-relaxed">ONE STOP DESTINATION <br/> FOR ALL YOUR MAKEUP NEEDS</h1>
