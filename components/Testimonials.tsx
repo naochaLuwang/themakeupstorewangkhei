@@ -66,7 +66,7 @@ const content = [
 export default function Testimonials() {
   return (
     <div >
-        <h1 className="max-w-6xl mx-auto text-3xl font-medium tracking-wide mb-5">What Our Customers say</h1>
+        <h1 className="max-w-6xl mx-auto lg:text-3xl text-xl pl-6 lg:pl-0 font-medium tracking-wide mb-5">What Our Customers say</h1>
       <StickyScroll content={content} />
     </div>
   );
