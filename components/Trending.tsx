@@ -3,120 +3,130 @@ import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
-// Define types for the data structure
-interface CardData {
-  category: string;
-  title: string;
-  src: string;
-  description: string;
-  price: string;
-  buttonText: string;
-  content: React.ReactNode; // Include content as a property
-}
 
-// Define props for DummyContent component
-interface DummyContentProps {
-  description: string;
-  price: string;
-  buttonText: string;
-}
 
-// Updated DummyContent component with types
-const DummyContent: React.FC<DummyContentProps> = ({ description, price, buttonText }) => {
-  return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-        <span className="font-bold text-neutral-700 dark:text-neutral-200">
-          {description}
-        </span>
-        <br />
-        Price: <span className="font-bold">{price}</span>
-      </p>
-      <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md">
-        {buttonText}
-      </button>
-      <Image
-        src="/MILKSHAKE.png"
-        alt="Milkshake Foundation"
-        height={200}
-        width={500}
-        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-      />
-    </div>
-  );
-};
 
-// Sample data for the cards
-const data: CardData[] = [
-  {
-    category: "HUDA BEAUTY",
-    title: "Milkshake Foundation",
-    src: "/MILKSHAKE.png",
-    description: "Milkshake Foundation for a perfect look.",
-    price: "$35",
-    buttonText: "Buy Now",
-    content: <DummyContent description="Milkshake Foundation for a perfect look." price="$35" buttonText="Buy Now" />,
-  },
-  {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Tools to boost your productivity.",
-    price: "$50",
-    buttonText: "Learn More",
-    content: <DummyContent description="Tools to boost your productivity." price="$50" buttonText="Learn More" />,
-  },
-  {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Experience the future of AR.",
-    price: "$999",
-    buttonText: "Pre-order Now",
-    content: <DummyContent description="Experience the future of AR." price="$999" buttonText="Pre-order Now" />,
-  },
-  {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Get the latest maps.",
-    price: "$0",
-    buttonText: "Update Now",
-    content: <DummyContent description="Get the latest maps." price="$0" buttonText="Update Now" />,
-  },
-  {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Discover new features for iOS.",
-    price: "$0",
-    buttonText: "Explore",
-    content: <DummyContent description="Discover new features for iOS." price="$0" buttonText="Explore" />,
-  },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    description: "Join our team of innovators.",
-    price: "$0",
-    buttonText: "Apply Now",
-    content: <DummyContent description="Join our team of innovators." price="$0" buttonText="Apply Now" />,
-  },
-];
+
 
 export default function Trending() {
-  const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index}>
 
-    </Card>
-  ));
+
 
   return (
-    <div className="w-full h-full py-10">
-      <h2 className="max-w-7xl px-8 mx-auto lg:text-5xl text-2xl font-medium">
-        WHAT&apos;S NEW IN VOGUE ?
+    <div className="w-full h-auto lg:py-20 py-10 px-8">
+      <h2 className="max-w-6xl  mx-auto lg:text-5xl text-2xl font-medium">
+        Our Best Sellers
       </h2>
-      <Carousel items={cards} />
+
+
+
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-4 grid-cols-2 mt-10 gap-10">
+        <div className="w-full h-96 ">
+            <div className="relative w-full h-72">
+                <Image src="/milani.jpeg" fill alt="milani" objectFit="contain" />
+            </div>
+            <div className="flex flex-col space-y-3">
+                <h1>Milani Lipstick 430 Secret</h1>
+
+                     <div className="flex">
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className=" bg-white text-xl inline-block" >
+                    &#9734;
+                </span>
+            </div>
+            <p>₹ 1250</p>
+            </div>
+
+            <div className="w-full h-fit bg-black py-3 text-white text-center mt-5 font-medium">BUY NOW</div>
+        </div>
+
+        <div className="w-full h-96 ">
+            <div className="relative w-full h-72">
+                <Image src="/huda.jpeg" fill alt="milani" objectFit="contain" />
+            </div>
+            <div className="flex flex-col space-y-3">
+                <h1>Huda Beauty Foundation</h1>
+
+                     <div className="flex">
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className=" bg-white text-xl inline-block" >
+                    &#9734;
+                </span>
+            </div>
+            <p>₹ 3650</p>
+            </div>
+
+            <div className="w-full h-fit bg-black py-3 text-white text-center font-medium mt-5">BUY NOW</div>
+        </div>
+
+        <div className="w-full h-96 ">
+            <div className="relative w-full h-72">
+                <Image src="/bella.png" fill alt="milani" objectFit="contain" />
+            </div>
+            <div className="flex flex-col space-y-3">
+                <h1>Huda Beauty Foundation</h1>
+
+                     <div className="flex">
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className=" bg-white text-xl inline-block" >
+                    &#9734;
+                </span>
+            </div>
+            <p>₹ 3650</p>
+            </div>
+
+            <div className="w-full h-fit bg-black py-3 text-white text-center font-medium mt-5">BUY NOW</div>
+        </div>
+        <div className="w-full h-96 ">
+            <div className="relative w-full h-72">
+                <Image src="/macp.png" fill alt="milani" objectFit="contain" />
+            </div>
+            <div className="flex flex-col space-y-3">
+                <h1>Huda Beauty Foundation</h1>
+
+                     <div className="flex">
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className="text-black text-xl">&#9733;</span>
+                <span className=" bg-white text-xl inline-block" >
+                    &#9734;
+                </span>
+            </div>
+            <p>₹ 3650</p>
+            </div>
+
+            <div className="w-full h-fit bg-black py-3 text-white text-center font-medium mt-5">BUY NOW</div>
+        </div>
+      </div>
+
+
+
+      <div className="max-w-6xl mx-auto text-center mt-32">
+        <a href="#_" className="relative inline-block text-lg group">
+<span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+<span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+<span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+<span className="relative">View all products</span>
+</span>
+<span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+</a>
+      </div>
+
+
+
+
+
     </div>
+
   );
 }
