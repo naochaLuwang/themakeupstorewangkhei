@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import Map from "@/components/map";
 import Creator from "@/components/creator";
 import Discover from "@/components/Discover";
+import NewArrival from "@/components/NewArrival";
 // import Testimonials from "@/components/Testimonials";
 
 const geistSans = localFont({
@@ -52,8 +53,10 @@ export default function RootLayout({
 
 
         {children}
+        <NewArrival />
         <Discover />
         <BrandPartners />
+
 
         {/* <Testimonials /> */}
         {/* <Map /> */}
