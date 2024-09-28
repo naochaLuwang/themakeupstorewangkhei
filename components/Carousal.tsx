@@ -72,13 +72,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Exo_2} from 'next/font/google';
+
+const exo = Exo_2({
+    weight:["400", "500", "600", "700", "800"],
+    subsets: ['latin']
+})
 
 const Carousal = () => {
   return (
     <div className="flex flex-col w-full lg:h-[70vh] h-56 relative overflow-hidden">
       {/* Text container with semi-transparent background for mobile view */}
       <div className="lg:pl-16  absolute inset-0 flex flex-col justify-center h-full p-4 pl-8 z-10 lg:top-48 top-28 transform -translate-y-1/2 lg:bg-transparent bg-black bg-opacity-60 rounded-md">
-        <h1 className="text-white lg:text-black lg:text-4xl text-base font-semibold tracking-wide leading-relaxed">
+        <h1 className={`text-white lg:text-black lg:text-4xl text-base font-[800] tracking-wide leading-relaxed ${exo.className}`}>
           ONE STOP DESTINATION <br /> FOR ALL YOUR MAKEUP NEEDS
         </h1>
         <p className="text-white lg:text-black lg:text-sm text-xs mt-5 lg:mb-10 mb-5">

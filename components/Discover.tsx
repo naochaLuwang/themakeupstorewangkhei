@@ -16,7 +16,7 @@ const Discover = () => {
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
           <div className="flex flex-col space-y-2">
             <p className="text-lg tracking-wider">Inclusive Selection</p>
-            <p className="text-sm font-extralight">We believe beauty is for everyone. Our diverse range of products caters to all skin tones and preferences, ensuring you find exactly what you need.</p>
+            <p className="text-sm font-extralight">Beauty is for everyone, with products for all skin tones and preferences.</p>
           </div>
         </div>
 
@@ -24,7 +24,8 @@ const Discover = () => {
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
           <div className="flex flex-col space-y-2">
             <p className="text-lg tracking-wider">Affordable to High-End</p>
-            <p className="text-sm font-extralight">From budget-friendly finds to luxurious brands, our curated collection offers options for every budget, making quality makeup accessible to all.</p>
+            <p className="text-sm font-extralight">
+From budget to luxury, our curated collection offers quality makeup for every budget.</p>
           </div>
         </div>
 
@@ -32,7 +33,7 @@ const Discover = () => {
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
           <div className="flex flex-col space-y-2">
             <p className="text-lg  tracking-wider">Online & In-Store Shopping</p>
-            <p className="text-sm font-extralight">Enjoy the convenience of shopping online or in-store, providing flexibility that suits your lifestyle.</p>
+            <p className="text-sm font-extralight">Shop online or in-store with flexibility to fit your lifestyle.</p>
           </div>
         </div>
 
@@ -40,7 +41,8 @@ const Discover = () => {
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
           <div className="flex flex-col space-y-2">
             <p className="text-lg  tracking-wider">Expertly Curated</p>
-            <p className="text-sm font-extralight">Each product is thoughtfully selected for its quality and effectiveness, ensuring you have the best tools to express your unique beauty.</p>
+            <p className="text-sm font-extralight">
+Each product is chosen for quality and effectiveness, helping you express your unique beauty.</p>
           </div>
         </div>
       </div>

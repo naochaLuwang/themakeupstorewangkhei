@@ -74,7 +74,7 @@ const NewArrival: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto py-20">
-      <h2 className={`text-7xl font-[400] mb-6 px-5 ${raleway.className}`}>New Arrivals</h2>
+      <h2 className={`text-7xl font-[400] mb-6 px-5 ${raleway.className}`}>New Launches</h2>
       <Carousel
         ref={carouselRef}
         responsive={responsive}

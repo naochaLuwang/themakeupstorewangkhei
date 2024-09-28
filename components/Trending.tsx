@@ -25,7 +25,7 @@ const Trending = () => {
       </div>
       <div className='w-full h-96 flex flex-col space-y-3'>
                 <div className="h-40 w-40 relative">
-                    <Image src="/milani.jpeg" alt="milani" fill objectFit='contain' />
+                    <Image src="/huda.jpeg" alt="milani" fill objectFit='contain' />
 
                 </div>
                 <p className="text-sm md:text-lg">Mialni Lipstick 430 Secret</p>
