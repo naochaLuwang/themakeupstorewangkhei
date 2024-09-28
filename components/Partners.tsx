@@ -9,7 +9,9 @@ import Partnerimage from './Partnerimage';
 const BrandPartners = () => {
   return (
     <div className="w-full h-auto my-10 lg:pt-20 pt-0 ">
-<h1 className='text-center lg:text-6xl text-3xl tracking-wide font-medium  '>OUR TOP BRANDS</h1>
+<h1 className='text-center lg:text-6xl text-3xl tracking-wide font-medium  '>BRANDS</h1>
+<p className='text-center'>Top Picks</p>
+<p className="max-w-6xl mx-auto text-center mt-5">Explore a wide range of well-known and niche makeup brands carefully curated for quality and diversity. From luxurious high end products to affordable options, we offer a selection that caters to all preferences and skin types, ensuring you find the perfect cosmetics to enhance your beauty.</p>
 
 <div className="max-w-7xl mx-auto py-12">
 <Marquee>

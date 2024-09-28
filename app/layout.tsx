@@ -11,7 +11,7 @@ import BrandPartners from "@/components/Partners";
 import Footer from "@/components/Footer";
 import Map from "@/components/map";
 import Creator from "@/components/creator";
-import Testimonials from "@/components/Testimonials";
+// import Testimonials from "@/components/Testimonials";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
 
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -51,8 +52,8 @@ export default function RootLayout({
 
         {children}
         <BrandPartners />
-        <Testimonials />
-        <Map />
+        {/* <Testimonials /> */}
+        {/* <Map /> */}
         <Footer/>
         <Creator/>
       </body>

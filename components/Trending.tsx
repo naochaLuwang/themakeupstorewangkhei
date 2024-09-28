@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import Link from "next/link";
 
 
 
@@ -40,7 +41,9 @@ export default function Trending() {
             <p>₹ 1250</p>
             </div>
 
-            <div className="w-full h-fit bg-black py-3 text-white text-center mt-5 font-medium">BUY NOW</div>
+            <Link href="https://mybillbook.in/store/the_make_up_store/item/104cabb8-e370-40b6-b97a-4ea53aedba25?search_text=milani" >
+                <div className="w-full h-fit bg-black py-3 text-white text-center mt-5 font-medium">BUY NOW</div> </Link>
+
         </div>
 
         <div className="w-full h-96 ">
@@ -112,7 +115,7 @@ export default function Trending() {
 
 
       <div className="max-w-6xl mx-auto text-center mt-32">
-        <a href="#_" className="relative inline-block text-lg group">
+        <a href="https://mybillbook.in/store/the_make_up_store" className="relative inline-block text-lg group">
 <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
 <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
 <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
