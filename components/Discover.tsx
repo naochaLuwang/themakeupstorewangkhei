@@ -12,7 +12,7 @@ const Discover = () => {
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-10 px-4">
-        <div className="flex flex-col text-center items-center justify-center w-full h-64 space-y-4">
+        <div className="flex flex-col text-center items-center justify-center w-full h-fit space-y-4">
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
           <div className="flex flex-col space-y-2">
             <p className="text-lg tracking-wider">Inclusive Selection</p>
@@ -20,7 +20,7 @@ const Discover = () => {
           </div>
         </div>
 
-        <div className="flex flex-col text-center items-center justify-center w-full h-64 space-y-3">
+        <div className="flex flex-col text-center items-center justify-center w-full h-fit space-y-4">
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
           <div className="flex flex-col space-y-2">
             <p className="text-lg tracking-wider">Affordable to High-End</p>
@@ -28,18 +28,18 @@ const Discover = () => {
           </div>
         </div>
 
-        <div className="flex flex-col text-center items-center justify-center w-full h-64 space-y-3">
+        <div className="flex flex-col text-center items-center justify-center w-full h-fit space-y-3">
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-2">
             <p className="text-lg  tracking-wider">Online & In-Store Shopping</p>
             <p className="text-sm font-extralight">Enjoy the convenience of shopping online or in-store, providing flexibility that suits your lifestyle.</p>
           </div>
         </div>
 
-        <div className="flex flex-col text-center items-center justify-center w-full h-64 space-y-3">
+        <div className="flex flex-col text-center items-center justify-center w-full h-fit space-y-4">
           <Image src="/icons/checkmark.png" alt="checkmark" width={50} height={50} />
-          <div className="flex flex-col">
-            <p className="text-lg md:text-xl tracking-wider">Expertly Curated</p>
+          <div className="flex flex-col space-y-2">
+            <p className="text-lg  tracking-wider">Expertly Curated</p>
             <p className="text-sm font-extralight">Each product is thoughtfully selected for its quality and effectiveness, ensuring you have the best tools to express your unique beauty.</p>
           </div>
         </div>
