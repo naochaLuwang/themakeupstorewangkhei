@@ -6,9 +6,14 @@ const About = () => {
     <div className="w-full h-auto flex flex-col px-8">
 
 
-<div className="max-w-5xl mx-auto flex flex-col space-y-3 mt-5 text-sm lg:text-base"> <p className="text-center">Founded in 2010, THE MAKEUP STORE has been dedicated to empowering beauty enthusiasts with high-quality makeup products that inspire creativity and confidence. With a passion for all things beauty, we curate a diverse selection of cosmetics from beloved brands to indie treasures, ensuring there&apos;s something for everyone. Our mission is to create a welcoming space where every individual can explore their unique style and express themselves through makeup.</p>
+<div className="max-w-5xl mx-auto flex flex-col space-y-3 mt-5 text-sm lg:text-base"> <p className="text-center tracking-wider leading-relaxed">
+Founded in 2021 by Louis Mayengbam, a former MAC Cosmetics manager in Bangalore and Arvind Krishana, a former MAC Cosmetics artist, THE MAKEUP STORE was born out of a desire to transform the beauty shopping experience in his home state of Manipur. Frustrated by the lack of testers and professional guidance, they set out to create a space where beauty enthusiasts could explore authentic makeup with the support they deserve.
 
-<p className="text-center">At THE MAKEUP STORE, we believe that beauty is not just about looking good—it's about feeling good too. Our knowledgeable team is here to offer personalized advice and tips to help you discover products that suit your needs. Join us on this vibrant journey of self-expression, and let us help you shine!</p>
+</p>
+
+<p className="text-center tracking-wider leading-loose">At THE MAKEUP STORE, we empower individuals with high-quality cosmetics that inspire creativity and confidence. Our curated selection features beloved brands alongside indie gems, ensuring there’s something for everyone.
+
+We believe beauty goes beyond looking good—it’s about feeling good, too. Our knowledgeable team is here to offer personalized advice and tips, helping you find products that truly suit your needs.</p>
 
 </div>
 

@@ -77,7 +77,7 @@ const Carousal = () => {
   return (
     <div className="flex flex-col w-full lg:h-[70vh] h-56 relative overflow-hidden">
       {/* Text container with semi-transparent background for mobile view */}
-      <div className="absolute inset-0 flex flex-col justify-center h-full p-4 z-10 lg:top-48 top-28 transform -translate-y-1/2 lg:bg-transparent bg-black bg-opacity-60 rounded-md">
+      <div className="lg:pl-16  absolute inset-0 flex flex-col justify-center h-full p-4 pl-8 z-10 lg:top-48 top-28 transform -translate-y-1/2 lg:bg-transparent bg-black bg-opacity-60 rounded-md">
         <h1 className="text-white lg:text-black lg:text-4xl text-base font-semibold tracking-wide leading-relaxed">
           ONE STOP DESTINATION <br /> FOR ALL YOUR MAKEUP NEEDS
         </h1>
