@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 
 const VideoGrid: React.FC = () => {
-  const videoRefs = useRef<HTMLVideoElement[]>([]); // Type the ref as an array of HTMLVideoElement
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Type as an array of HTMLVideoElement or null
 
   useEffect(() => {
     const options: IntersectionObserverInit = {
@@ -38,7 +38,9 @@ const VideoGrid: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center items-center">
       <video
-        ref={(el) => (videoRefs.current[0] = el!)} // Using non-null assertion
+        ref={(el) => {
+          videoRefs.current[0] = el; // Assign the element without returning anything
+        }}
         controls
         className="w-full md:w-1/2 h-[70vh] rounded-lg shadow-lg object-cover"
       >
@@ -47,7 +49,9 @@ const VideoGrid: React.FC = () => {
       </video>
 
       <video
-        ref={(el) => (videoRefs.current[1] = el!)} // Using non-null assertion
+        ref={(el) => {
+          videoRefs.current[1] = el; // Assign the element without returning anything
+        }}
         controls
         className="w-full md:w-1/2 h-[70vh] rounded-lg shadow-lg object-cover"
       >
