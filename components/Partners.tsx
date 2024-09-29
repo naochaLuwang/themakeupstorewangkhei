@@ -103,8 +103,8 @@ const BrandPartners = () => {
           <Partnerimage pimage="/partners/forever52.png" />
           <Partnerimage pimage="/partners/revolution.png" />
           <Partnerimage pimage="/partners/pigment.png" />
-          <Partnerimage pimage="/partners/kryolan.png" />
-          <Partnerimage pimage="/partners/milani.png" />
+          <Partnerimage pimage="/partners/toofaced.png" />
+          <Partnerimage pimage="/partners/proarte.png" />
         </Marquee>
       </div>
     </div>

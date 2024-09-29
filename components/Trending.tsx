@@ -1,11 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Orbitron} from 'next/font/google'
+
+const orbitron = Orbitron({
+    weight:["400","500","600", "700","800"],
+    subsets:["latin"]
+})
 
 const Trending = () => {
   return (
     <div className="max-w-7xl h-auto mx-auto py-10">
-        <h1 className="lg:text-4xl text-xl tracking-wider mb-10 px-8 lg:px-0">Our Best Sellers</h1>
+        <h1 className={`lg:text-4xl text-xl tracking-wider mb-10 px-8 lg:px-0 ${orbitron.className}`}>Our Best Sellers</h1>
         <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 lg:max-w-7xl lg:mx-auto w-full px-8 lg:px-0 mt-10">
             <div className='w-full h-96 flex flex-col space-y-3'>
                 <div className="h-40 w-40 relative">
@@ -28,7 +34,7 @@ const Trending = () => {
                     <Image src="/huda.jpeg" alt="milani" fill objectFit='contain' />
 
                 </div>
-                <p className="text-sm md:text-lg">Mialni Lipstick 430 Secret</p>
+                <p className="text-sm md:text-lg">Huda Beauty Milkshake</p>
                   <div className="flex">
           <span className="text-black text-xl">&#9733;</span>
           <span className="text-black text-xl">&#9733;</span>
@@ -36,8 +42,8 @@ const Trending = () => {
           <span className="text-black text-xl">&#9733;</span>
           <span className="bg-white text-xl inline-block">&#9734;</span>
         </div>
-        <p>₹ 1250</p>
-        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store">BUY NOW</Link>
+        <p>₹ 3650</p>
+        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store/item/feb05662-a784-41b8-aa4f-eefc987925f8?search_text=milkshake">BUY NOW</Link>
       </div>
       <div className='w-full h-96 flex flex-col space-y-3'>
                 <div className="h-40 w-40 relative">

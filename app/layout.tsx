@@ -14,6 +14,7 @@ import Creator from "@/components/creator";
 import Discover from "@/components/Discover";
 import NewArrival from "@/components/NewArrival";
 import VideoGrid from "@/components/VideoGrid";
+import Testimonials from "@/components/Testimonials";
 // import Testimonials from "@/components/Testimonials";
 
 const geistSans = localFont({
@@ -57,10 +58,12 @@ export default function RootLayout({
         <NewArrival />
         <Discover />
         <BrandPartners />
-        <VideoGrid />
+        <Testimonials />
+        {/* <VideoGrid /> */}
 
 
-        {/* <Testimonials /> */}
+
+
         {/* <Map /> */}
         <Footer/>
         <Creator/>
