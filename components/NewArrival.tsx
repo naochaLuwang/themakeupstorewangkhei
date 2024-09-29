@@ -22,24 +22,24 @@ const raleway = Raleway_Dots({
 const products: Product[] = [
   {
     id: 1,
-    name: 'Product 1',
-    price: '₹ 1200',
-    image: '/milani.jpeg',
-    link: '#',
+    name: 'LN PRO 4 Steps Contour',
+    price: '₹ 450',
+    image: '/lnprocounter.png',
+    link: 'https://mybillbook.in/store/the_make_up_store/item/1fff865d-2412-4af4-b3f7-37f0a464a315?category=7a7aaf36-0ea5-4706-acef-c8021ad3653b&page_no=1',
   },
   {
     id: 2,
-    name: 'Product 2',
-    price: '₹ 1500',
-    image: '/milani.jpeg',
-    link: '#',
+    name: 'Too Faced Lip Injection',
+    price: '₹ 2550',
+    image: '/tooflip.png',
+    link: 'https://mybillbook.in/store/the_make_up_store/item/1d38fe2b-2587-4fe9-b1bd-8eec4c1b5fec?category=c4de3cd7-4145-43fc-ae2c-0052ef13bb6a&page_no=1',
   },
   {
     id: 3,
-    name: 'Product 3',
-    price: '₹ 1800',
-    image: '/milani.jpeg',
-    link: '#',
+    name: 'LN Pro Highlighter 102',
+    price: '₹ 395',
+    image: '/lnprodew.png',
+    link: 'https://mybillbook.in/store/the_make_up_store/item/2572f41b-4e82-44c3-a491-6e2cec212a81?category=7a7aaf36-0ea5-4706-acef-c8021ad3653b&page_no=1',
   },
   {
     id: 4,
@@ -79,15 +79,15 @@ const NewArrival: React.FC = () => {
         ref={carouselRef}
         responsive={responsive}
         infinite={true}
-        autoPlay={false} // Set to false to use custom buttons
+        autoPlay={true} // Set to false to use custom buttons
         containerClass="carousel-container"
         itemClass="carousel-item-padding-20-px"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+
       >
         {products.map((product) => (
           <div key={product.id} className="bg-white h-96 flex overflow-hidden mx-5 flex-col">
             <div className="flex items-center justify-center w-full h-full"> {/* Center the image */}
-              <div className="relative w-40 h-40">
+              <div className="relative w-56 h-56">
                 <Image
                   src={product.image}
                   alt={product.name}
