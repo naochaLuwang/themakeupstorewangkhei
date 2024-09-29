@@ -43,10 +43,10 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: 'Product 4',
-    price: '₹ 2100',
-    image: '/milani.jpeg',
-    link: '#',
+    name: 'Eveline Cleansing Micellar Gel',
+    price: '₹ 399',
+    image: '/evelmic.png',
+    link: 'https://mybillbook.in/store/the_make_up_store/item/52769f21-05a6-463c-9ea5-569f51df6bf5?category=5e0312f5-f273-4683-80dc-7eda9fcd032c&page_no=1',
   },
 ];
 
