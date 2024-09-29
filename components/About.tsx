@@ -7,7 +7,7 @@ const About = () => {
 
 
 <div className="max-w-5xl mx-auto flex flex-col space-y-3 mt-5 text-sm lg:text-base"> <p className="text-center tracking-wider leading-relaxed">
-Founded in 2021 by Louis Mayengbam, a former MAC Cosmetics manager in Bangalore and Arvind Krishana, a former MAC ARTIST, THE MAKEUP STORE was born out of a desire to transform the beauty shopping experience in his home state of Manipur. Frustrated by the lack of testers and professional guidance, they set out to create a space where beauty enthusiasts could explore authentic makeup with the support they deserve.
+Founded in 2021 by Louis Mayengbam, a former MAC Cosmetics manager in Bangalore and Arvind Krishna, a former MAC ARTIST, THE MAKEUP STORE was born out of a desire to transform the beauty shopping experience in his home state of Manipur. Frustrated by the lack of testers and professional guidance, they set out to create a space where beauty enthusiasts could explore authentic makeup with the support they deserve.
 
 </p>
 
