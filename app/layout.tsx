@@ -15,6 +15,7 @@ import Discover from "@/components/Discover";
 import NewArrival from "@/components/NewArrival";
 import VideoGrid from "@/components/VideoGrid";
 import Testimonials from "@/components/Testimonials";
+import { Analytics } from '@vercel/analytics/react';
 // import Testimonials from "@/components/Testimonials";
 
 const geistSans = localFont({
@@ -55,6 +56,7 @@ export default function RootLayout({
 
 
         {children}
+        <Analytics />
         <NewArrival />
         <Discover />
         <BrandPartners />
