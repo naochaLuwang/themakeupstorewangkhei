@@ -59,14 +59,14 @@ const Trending = () => {
           <span className="bg-white text-xl inline-block">&#9734;</span>
         </div>
         <p>₹ 1250</p>
-        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store">BUY NOW</Link>
+        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store/item/104cabb8-e370-40b6-b97a-4ea53aedba25?category=bcd20f18-b238-4340-9ce4-52de6e0d954f&page_no=1">BUY NOW</Link>
       </div>
       <div className='w-full h-96 flex flex-col space-y-3'>
                 <div className="h-40 w-40 relative">
-                    <Image src="/milani.jpeg" alt="milani" fill objectFit='contain' />
+                    <Image src="/la4.jpeg" alt="milani" fill objectFit='contain' />
 
                 </div>
-                <p>Mialni Lipstick 430 Secret</p>
+                <p>LA Girl 4 Play Eyeshadow</p>
                   <div className="flex">
           <span className="text-black text-xl">&#9733;</span>
           <span className="text-black text-xl">&#9733;</span>
@@ -74,18 +74,18 @@ const Trending = () => {
           <span className="text-black text-xl">&#9733;</span>
           <span className="bg-white text-xl inline-block">&#9734;</span>
         </div>
-        <p>₹ 1250</p>
-        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store">BUY NOW</Link>
+        <p>₹ 745</p>
+        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store/item/f741546e-ddbf-4e01-ab62-87fcdd761373?category=a0336bcc-e3fb-4a8d-bd22-5b8c08bedb2f&page_no=2">BUY NOW</Link>
       </div>
 
             </div>
 
               <div className="flex justify-center">
       <div className="relative inline-block text-lg group">
-        <div className="relative flex items-center justify-between px-5 py-2 text-black bg-white border border-black rounded-lg cursor-pointer transition-all duration-300 ease-in-out">
+        <Link href="https://mybillbook.in/store/the_make_up_store" className="relative flex items-center justify-between px-5 py-2 text-black bg-white border border-black rounded-lg cursor-pointer transition-all duration-300 ease-in-out">
           <span className="transition-transform duration-300 ease-in-out group-hover:translate-x-[-10px]">Explore More Products</span>
           <span className="ml-2 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">→</span>
-        </div>
+        </Link>
       </div>
     </div>
         </div>
