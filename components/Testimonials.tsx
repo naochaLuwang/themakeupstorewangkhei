@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 
 const testimonials = [
   {
-    name: "John Doe",
+    name: "Pooja A.",
 
     feedback: "Hands down the best makeup store in town! The staff helped me find the perfect shade of foundation, and the customer service was top-notch. I always leave feeling pampered and beautiful",
     title:"Personalized Service Like No Other",
@@ -14,19 +14,19 @@ const testimonials = [
 
   },
   {
-    name: "Jane Smith",
+    name: "Allan R.",
     feedback: "I love the personalized service! They really take the time to understand your needs and skin type. The products are top quality and have transformed my everyday beauty routine.",
     title:"Transformed My Everyday Routine",
     date:"21/09/2023"
   },
   {
-    name: "Alex Johnson",
+    name: "Sarju L.",
     feedback: "The selection is incredible! Whether you're looking for something bold or natural, they have it all. The staff is super friendly and knowledgeable about what works best for each skin type.",
     title:"A Huge Selection for Every Look",
     date:"21/09/2023"
   },
   {
-    name: "Maria Garcia",
+    name: "Seema S.",
     feedback: "I’ve never felt more confident in my skin! The makeup artists here knew exactly what products would complement my complexion. The result was flawless! I’ll definitely be back for more.",
     title:"Flawless Complexion Every Time",
     date:"21/09/2023"
@@ -65,7 +65,7 @@ export default function Testimonials() {
             className="bg-white border border-gray-200 shadow-sm h-80 rounded-lg p-6 mx-3"
           >
             <div className="flex items-center ">
-                <p className="font-semibold text-sm " >Naocha Luwang</p>
+                <p className="font-semibold text-sm " >{testimonial.name}</p>
                 <Image src="/icons/check.png" width={20} height={20} className="ml-2" alt="check" />
             <p className="font-extralight tracking-wider text-sm ml-2">Verified Buyer</p></div>
             <div className="flex">
