@@ -16,7 +16,7 @@ const Header = () => {
 
 
 
-        <div className="w-fit h-fit bg-gray-800 lg:px-4 lg:py-2 px-2 py-2 text-white rounded-md shadow-sm hover:bg-gray-900 lg:text-md text-sm font-semibold">
+        <div className="w-fit h-fit bg-gray-800 lg:px-4 lg:py-2 px-2 py-2 text-white rounded-md shadow-sm hover:bg-gray-900 lg:text-md text-sm text-center font-semibold">
             <Link href="https://mybillbook.in/store/the_make_up_store">SHOP NOW</Link>
         </div>
     </div>
