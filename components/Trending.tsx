@@ -63,10 +63,10 @@ const Trending = () => {
       </div>
       <div className='w-full h-96 flex flex-col space-y-3'>
                 <div className="h-40 w-40 relative">
-                    <Image src="/la4.jpeg" alt="milani" fill objectFit='contain' />
+                    <Image src="/lalip.jpg" alt="milani" fill objectFit='contain' />
 
                 </div>
-                <p>LA Girl 4 Play Eyeshadow</p>
+                <p>LA Girl Lumicilious Gloss</p>
                   <div className="flex">
           <span className="text-black text-xl">&#9733;</span>
           <span className="text-black text-xl">&#9733;</span>
@@ -74,8 +74,8 @@ const Trending = () => {
           <span className="text-black text-xl">&#9733;</span>
           <span className="bg-white text-xl inline-block">&#9734;</span>
         </div>
-        <p>₹ 745</p>
-        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store/item/f741546e-ddbf-4e01-ab62-87fcdd761373?category=a0336bcc-e3fb-4a8d-bd22-5b8c08bedb2f&page_no=2">BUY NOW</Link>
+        <p>₹ 675</p>
+        <Link className="w-full h-fit bg-black text-white text-center py-2 px-4"  href="https://mybillbook.in/store/the_make_up_store/item/fad65778-b41d-4d9d-b196-8b04c1ba5edb?category=a0336bcc-e3fb-4a8d-bd22-5b8c08bedb2f&page_no=3">BUY NOW</Link>
       </div>
 
             </div>
