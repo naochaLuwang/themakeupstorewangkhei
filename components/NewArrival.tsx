@@ -10,6 +10,7 @@ interface Product {
   id: number;
   name: string;
   price: string;
+  discountPrice: string;
   image: string;
   link: string;
 }
@@ -24,6 +25,7 @@ const products: Product[] = [
     id: 1,
     name: 'LN PRO 4 Steps Contour',
     price: '₹ 450',
+    discountPrice:'427',
     image: '/lnprocounter.png',
     link: 'https://mybillbook.in/store/the_make_up_store/item/1fff865d-2412-4af4-b3f7-37f0a464a315?category=7a7aaf36-0ea5-4706-acef-c8021ad3653b&page_no=1',
   },
@@ -31,6 +33,7 @@ const products: Product[] = [
     id: 2,
     name: 'Too Faced Lip Injection',
     price: '₹ 2550',
+    discountPrice:'2422',
     image: '/tooflip.png',
     link: 'https://mybillbook.in/store/the_make_up_store/item/1d38fe2b-2587-4fe9-b1bd-8eec4c1b5fec?category=c4de3cd7-4145-43fc-ae2c-0052ef13bb6a&page_no=1',
   },
@@ -38,13 +41,15 @@ const products: Product[] = [
     id: 3,
     name: 'LN Pro Highlighter 102',
     price: '₹ 395',
+    discountPrice:'375',
     image: '/lnprodew.png',
     link: 'https://mybillbook.in/store/the_make_up_store/item/2572f41b-4e82-44c3-a491-6e2cec212a81?category=7a7aaf36-0ea5-4706-acef-c8021ad3653b&page_no=1',
   },
   {
     id: 4,
-    name: 'Eveline Cleansing Micellar Gel',
+    name: 'Eveline Cleansing Gel',
     price: '₹ 399',
+    discountPrice:'379',
     image: '/evelmic.png',
     link: 'https://mybillbook.in/store/the_make_up_store/item/52769f21-05a6-463c-9ea5-569f51df6bf5?category=5e0312f5-f273-4683-80dc-7eda9fcd032c&page_no=1',
   },
@@ -86,6 +91,7 @@ const NewArrival: React.FC = () => {
       >
         {products.map((product) => (
           <div key={product.id} className="bg-white h-96 flex overflow-hidden mx-5 flex-col">
+            <div className="w-fit h-fit p-2 bg-green-100 rounded-md shadow-sm "><p className="text-sm font-bold text-green-600">5% OFF</p></div>
             <div className="flex items-center justify-center w-full h-full"> {/* Center the image */}
               <div className="relative w-56 h-56">
                 <Image
@@ -98,7 +104,7 @@ const NewArrival: React.FC = () => {
             </div>
             <div className="p-4 w-full flex flex-col justify-center"> {/* Align text to the right */}
               <h3 className="text-lg font-semibold">{product.name}</h3>
-              <p className="text-gray-500">{product.price}</p>
+             <p className="font-bold text-lg">₹ {product.discountPrice} <span className="line-through text-gray-400 ">{product.price}</span></p>
               <Link href={product.link} passHref>
                 <div className="mt-3 w-full inline-block bg-black text-white py-2 rounded hover:bg-gray-800 transition text-center">
                   Buy Now
