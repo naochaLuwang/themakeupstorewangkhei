@@ -91,7 +91,7 @@ const NewArrival: React.FC = () => {
       >
         {products.map((product) => (
           <div key={product.id} className="bg-white h-96 flex overflow-hidden mx-5 flex-col">
-            <div className="w-fit h-fit p-2 bg-green-100 rounded-md shadow-sm "><p className="text-sm font-bold text-green-600">5% OFF</p></div>
+            {/* <div className="w-fit h-fit p-2 bg-green-100 rounded-md shadow-sm "><p className="text-sm font-bold text-green-600">5% OFF</p></div> */}
             <div className="flex items-center justify-center w-full h-full"> {/* Center the image */}
               <div className="relative w-56 h-56">
                 <Image
@@ -104,7 +104,8 @@ const NewArrival: React.FC = () => {
             </div>
             <div className="p-4 w-full flex flex-col justify-center"> {/* Align text to the right */}
               <h3 className="text-lg font-semibold">{product.name}</h3>
-             <p className="font-bold text-lg">₹ {product.discountPrice} <span className="line-through text-gray-400 ">{product.price}</span></p>
+             {/* <p className="font-bold text-lg">₹ {product.discountPrice} <span className="line-through text-gray-400 ">{product.price}</span></p> */}
+             <p className="font-bold text-lg">{product.price}</p>
               <Link href={product.link} passHref>
                 <div className="mt-3 w-full inline-block bg-black text-white py-2 rounded hover:bg-gray-800 transition text-center">
                   Buy Now
